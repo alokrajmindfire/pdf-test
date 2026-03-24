@@ -1,4 +1,4 @@
-import { FileText, Download, Eye } from 'lucide-react';
+import { FileText } from 'lucide-react';
 import { useState } from 'react';
 import pdf1 from './assets/Bidder Instructions-6.pdf'
 import pdf2 from './assets/Sanilac_1.pdf'
