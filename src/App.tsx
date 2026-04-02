@@ -57,6 +57,13 @@ const documents: PDFDocument[] = [
     url: pdf6,
     size: '1.2 MB'
   },
+   {
+    id: 7,
+    title: 'Meeting Notes 9',
+    description: 'Summary of quarterly planning meetings',
+    url: 'https://demo.revize.com/revize/demositenew2/Minutes-02-14-23.pdf',
+    size: '1.2 MB'
+  },
 ];
 
 function App() {
