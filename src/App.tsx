@@ -6,6 +6,7 @@ import pdf3 from './assets/Urban Design Plan_24.pdf'
 import pdf4 from './assets/pedestrian_90.pdf'
 import pdf5 from './assets/5.pdf'
 import pdf6 from './assets/BUILDING PERMIT FEE - MAY 2016.pdf'
+import pdf7 from './assets/Contractor_Registration_Application.pdf'
 interface PDFDocument {
   id: number;
   title: string;
@@ -62,6 +63,13 @@ const documents: PDFDocument[] = [
     title: 'Meeting Notes 9',
     description: 'Summary of quarterly planning meetings',
     url: 'https://demo.revize.com/revize/demositenew2/Minutes-02-14-23.pdf',
+    size: '1.2 MB'
+  },
+  {
+    id: 8,
+    title: '20-04-2026',
+    description: 'Summary of quarterly planning meetings',
+    url: pdf7,
     size: '1.2 MB'
   },
 ];
