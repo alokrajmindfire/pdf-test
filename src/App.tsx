@@ -24,13 +24,6 @@ const documents: PDFDocument[] = [
     size: '2.3 MB'
   },
   {
-    id: 2,
-    title: 'User Manual 2',
-    description: 'Complete guide for end users and administrators',
-    url: pdf2,
-    size: '1.8 MB'
-  },
-  {
     id: 3,
     title: 'Technical Specifications 3',
     description: 'Technical architecture and system specifications',
