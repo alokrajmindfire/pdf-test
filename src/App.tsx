@@ -1,7 +1,7 @@
 import { FileText } from 'lucide-react';
 import { useState } from 'react';
 import pdf1 from './assets/Bidder Instructions-6.pdf'
-import pdf2 from './assets/Sanilac_1.pdf'
+// import pdf2 from './assets/Sanilac_1.pdf'
 import pdf3 from './assets/Urban Design Plan_24.pdf'
 import pdf4 from './assets/pedestrian_90.pdf'
 import pdf5 from './assets/5.pdf'
