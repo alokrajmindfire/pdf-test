@@ -1,3 +1,29 @@
+# Science PDF Crawl Lab
+
+Multi-page React site for testing web crawlers: class-wise science documents, pagination, filters, and **771 unique PDF URLs**.
+
+## PDF setup (required after clone)
+
+Downloads real NCERT chapter PDFs into `src/assets/science/`, then creates one unique file per catalog entry at `public/pdf/<id>.pdf`:
+
+```bash
+npm install
+npm run setup-pdfs   # fetch + link (~2 min download, ~800MB disk)
+npm run dev
+```
+
+| Script | Purpose |
+|--------|---------|
+| `npm run fetch-pdfs` | Download 160+ NCERT chapters to `src/assets/science/` |
+| `npm run link-pdfs` | Hard-link unique paths in `public/pdf/` for each document ID |
+| `npm run setup-pdfs` | Both steps above |
+
+Example unique link: `http://localhost:5173/pdf/c10-physics-ncert-notes-ch1.pdf`
+
+Sources: [NCERT official textbooks](https://ncert.nic.in/textbook.php) (not scraped from Google Drive).
+
+---
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

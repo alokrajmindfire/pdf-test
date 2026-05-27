@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+# Downloaded NCERT sources & generated unique crawl PDFs (large)
+# src/assets/science/
+# public/pdf/
+# scripts/ncert-manifest.json
+# scripts/catalog-ids.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -1,0 +1,968 @@
+[
+  {
+    "file": "jesc102.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jesc102.pdf",
+    "book": "jesc",
+    "chapter": 2
+  },
+  {
+    "file": "jesc103.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jesc103.pdf",
+    "book": "jesc",
+    "chapter": 3
+  },
+  {
+    "file": "jesc104.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jesc104.pdf",
+    "book": "jesc",
+    "chapter": 4
+  },
+  {
+    "file": "jesc105.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jesc105.pdf",
+    "book": "jesc",
+    "chapter": 5
+  },
+  {
+    "file": "jesc106.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jesc106.pdf",
+    "book": "jesc",
+    "chapter": 6
+  },
+  {
+    "file": "jesc107.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jesc107.pdf",
+    "book": "jesc",
+    "chapter": 7
+  },
+  {
+    "file": "jesc108.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jesc108.pdf",
+    "book": "jesc",
+    "chapter": 8
+  },
+  {
+    "file": "jesc109.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jesc109.pdf",
+    "book": "jesc",
+    "chapter": 9
+  },
+  {
+    "file": "jesc110.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jesc110.pdf",
+    "book": "jesc",
+    "chapter": 10
+  },
+  {
+    "file": "jesc111.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jesc111.pdf",
+    "book": "jesc",
+    "chapter": 11
+  },
+  {
+    "file": "jesc112.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jesc112.pdf",
+    "book": "jesc",
+    "chapter": 12
+  },
+  {
+    "file": "jesc113.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jesc113.pdf",
+    "book": "jesc",
+    "chapter": 13
+  },
+  {
+    "file": "iesc101.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/iesc101.pdf",
+    "book": "iesc",
+    "chapter": 1
+  },
+  {
+    "file": "iesc102.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/iesc102.pdf",
+    "book": "iesc",
+    "chapter": 2
+  },
+  {
+    "file": "iesc103.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/iesc103.pdf",
+    "book": "iesc",
+    "chapter": 3
+  },
+  {
+    "file": "iesc104.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/iesc104.pdf",
+    "book": "iesc",
+    "chapter": 4
+  },
+  {
+    "file": "iesc105.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/iesc105.pdf",
+    "book": "iesc",
+    "chapter": 5
+  },
+  {
+    "file": "iesc106.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/iesc106.pdf",
+    "book": "iesc",
+    "chapter": 6
+  },
+  {
+    "file": "iesc107.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/iesc107.pdf",
+    "book": "iesc",
+    "chapter": 7
+  },
+  {
+    "file": "iesc108.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/iesc108.pdf",
+    "book": "iesc",
+    "chapter": 8
+  },
+  {
+    "file": "iesc109.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/iesc109.pdf",
+    "book": "iesc",
+    "chapter": 9
+  },
+  {
+    "file": "iesc110.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/iesc110.pdf",
+    "book": "iesc",
+    "chapter": 10
+  },
+  {
+    "file": "iesc111.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/iesc111.pdf",
+    "book": "iesc",
+    "chapter": 11
+  },
+  {
+    "file": "iesc112.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/iesc112.pdf",
+    "book": "iesc",
+    "chapter": 12
+  },
+  {
+    "file": "iesc113.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/iesc113.pdf",
+    "book": "iesc",
+    "chapter": 13
+  },
+  {
+    "file": "gecu101.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/gecu101.pdf",
+    "book": "gecu",
+    "chapter": 1
+  },
+  {
+    "file": "gecu102.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/gecu102.pdf",
+    "book": "gecu",
+    "chapter": 2
+  },
+  {
+    "file": "gecu103.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/gecu103.pdf",
+    "book": "gecu",
+    "chapter": 3
+  },
+  {
+    "file": "gecu104.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/gecu104.pdf",
+    "book": "gecu",
+    "chapter": 4
+  },
+  {
+    "file": "gecu105.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/gecu105.pdf",
+    "book": "gecu",
+    "chapter": 5
+  },
+  {
+    "file": "gecu106.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/gecu106.pdf",
+    "book": "gecu",
+    "chapter": 6
+  },
+  {
+    "file": "gecu107.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/gecu107.pdf",
+    "book": "gecu",
+    "chapter": 7
+  },
+  {
+    "file": "gecu108.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/gecu108.pdf",
+    "book": "gecu",
+    "chapter": 8
+  },
+  {
+    "file": "gecu109.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/gecu109.pdf",
+    "book": "gecu",
+    "chapter": 9
+  },
+  {
+    "file": "gecu110.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/gecu110.pdf",
+    "book": "gecu",
+    "chapter": 10
+  },
+  {
+    "file": "gecu111.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/gecu111.pdf",
+    "book": "gecu",
+    "chapter": 11
+  },
+  {
+    "file": "gecu112.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/gecu112.pdf",
+    "book": "gecu",
+    "chapter": 12
+  },
+  {
+    "file": "fecu101.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/fecu101.pdf",
+    "book": "fecu",
+    "chapter": 1
+  },
+  {
+    "file": "fecu102.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/fecu102.pdf",
+    "book": "fecu",
+    "chapter": 2
+  },
+  {
+    "file": "fecu103.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/fecu103.pdf",
+    "book": "fecu",
+    "chapter": 3
+  },
+  {
+    "file": "fecu104.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/fecu104.pdf",
+    "book": "fecu",
+    "chapter": 4
+  },
+  {
+    "file": "fecu105.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/fecu105.pdf",
+    "book": "fecu",
+    "chapter": 5
+  },
+  {
+    "file": "fecu106.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/fecu106.pdf",
+    "book": "fecu",
+    "chapter": 6
+  },
+  {
+    "file": "fecu107.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/fecu107.pdf",
+    "book": "fecu",
+    "chapter": 7
+  },
+  {
+    "file": "fecu108.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/fecu108.pdf",
+    "book": "fecu",
+    "chapter": 8
+  },
+  {
+    "file": "fecu109.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/fecu109.pdf",
+    "book": "fecu",
+    "chapter": 9
+  },
+  {
+    "file": "fecu110.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/fecu110.pdf",
+    "book": "fecu",
+    "chapter": 10
+  },
+  {
+    "file": "fecu111.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/fecu111.pdf",
+    "book": "fecu",
+    "chapter": 11
+  },
+  {
+    "file": "fecu112.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/fecu112.pdf",
+    "book": "fecu",
+    "chapter": 12
+  },
+  {
+    "file": "hecu101.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hecu101.pdf",
+    "book": "hecu",
+    "chapter": 1
+  },
+  {
+    "file": "hecu102.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hecu102.pdf",
+    "book": "hecu",
+    "chapter": 2
+  },
+  {
+    "file": "hecu103.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hecu103.pdf",
+    "book": "hecu",
+    "chapter": 3
+  },
+  {
+    "file": "hecu104.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hecu104.pdf",
+    "book": "hecu",
+    "chapter": 4
+  },
+  {
+    "file": "hecu105.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hecu105.pdf",
+    "book": "hecu",
+    "chapter": 5
+  },
+  {
+    "file": "hecu106.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hecu106.pdf",
+    "book": "hecu",
+    "chapter": 6
+  },
+  {
+    "file": "hecu107.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hecu107.pdf",
+    "book": "hecu",
+    "chapter": 7
+  },
+  {
+    "file": "hecu108.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hecu108.pdf",
+    "book": "hecu",
+    "chapter": 8
+  },
+  {
+    "file": "hecu109.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hecu109.pdf",
+    "book": "hecu",
+    "chapter": 9
+  },
+  {
+    "file": "hecu110.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hecu110.pdf",
+    "book": "hecu",
+    "chapter": 10
+  },
+  {
+    "file": "hecu111.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hecu111.pdf",
+    "book": "hecu",
+    "chapter": 11
+  },
+  {
+    "file": "hecu112.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hecu112.pdf",
+    "book": "hecu",
+    "chapter": 12
+  },
+  {
+    "file": "hecu113.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hecu113.pdf",
+    "book": "hecu",
+    "chapter": 13
+  },
+  {
+    "file": "kebo101.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kebo101.pdf",
+    "book": "kebo",
+    "chapter": 1
+  },
+  {
+    "file": "kebo102.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kebo102.pdf",
+    "book": "kebo",
+    "chapter": 2
+  },
+  {
+    "file": "kebo103.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kebo103.pdf",
+    "book": "kebo",
+    "chapter": 3
+  },
+  {
+    "file": "kebo104.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kebo104.pdf",
+    "book": "kebo",
+    "chapter": 4
+  },
+  {
+    "file": "kebo105.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kebo105.pdf",
+    "book": "kebo",
+    "chapter": 5
+  },
+  {
+    "file": "kebo106.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kebo106.pdf",
+    "book": "kebo",
+    "chapter": 6
+  },
+  {
+    "file": "kebo107.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kebo107.pdf",
+    "book": "kebo",
+    "chapter": 7
+  },
+  {
+    "file": "kebo108.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kebo108.pdf",
+    "book": "kebo",
+    "chapter": 8
+  },
+  {
+    "file": "kebo109.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kebo109.pdf",
+    "book": "kebo",
+    "chapter": 9
+  },
+  {
+    "file": "kebo110.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kebo110.pdf",
+    "book": "kebo",
+    "chapter": 10
+  },
+  {
+    "file": "kebo111.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kebo111.pdf",
+    "book": "kebo",
+    "chapter": 11
+  },
+  {
+    "file": "kebo112.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kebo112.pdf",
+    "book": "kebo",
+    "chapter": 12
+  },
+  {
+    "file": "kebo113.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kebo113.pdf",
+    "book": "kebo",
+    "chapter": 13
+  },
+  {
+    "file": "kebo114.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kebo114.pdf",
+    "book": "kebo",
+    "chapter": 14
+  },
+  {
+    "file": "kebo115.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kebo115.pdf",
+    "book": "kebo",
+    "chapter": 15
+  },
+  {
+    "file": "kech101.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kech101.pdf",
+    "book": "kech",
+    "chapter": 1
+  },
+  {
+    "file": "kech102.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kech102.pdf",
+    "book": "kech",
+    "chapter": 2
+  },
+  {
+    "file": "kech103.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kech103.pdf",
+    "book": "kech",
+    "chapter": 3
+  },
+  {
+    "file": "kech104.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kech104.pdf",
+    "book": "kech",
+    "chapter": 4
+  },
+  {
+    "file": "kech105.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kech105.pdf",
+    "book": "kech",
+    "chapter": 5
+  },
+  {
+    "file": "kech106.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kech106.pdf",
+    "book": "kech",
+    "chapter": 6
+  },
+  {
+    "file": "keph101.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/keph101.pdf",
+    "book": "keph",
+    "chapter": 1
+  },
+  {
+    "file": "keph102.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/keph102.pdf",
+    "book": "keph",
+    "chapter": 2
+  },
+  {
+    "file": "keph103.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/keph103.pdf",
+    "book": "keph",
+    "chapter": 3
+  },
+  {
+    "file": "keph104.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/keph104.pdf",
+    "book": "keph",
+    "chapter": 4
+  },
+  {
+    "file": "keph105.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/keph105.pdf",
+    "book": "keph",
+    "chapter": 5
+  },
+  {
+    "file": "keph106.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/keph106.pdf",
+    "book": "keph",
+    "chapter": 6
+  },
+  {
+    "file": "keph107.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/keph107.pdf",
+    "book": "keph",
+    "chapter": 7
+  },
+  {
+    "file": "leph101.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/leph101.pdf",
+    "book": "leph",
+    "chapter": 1
+  },
+  {
+    "file": "leph102.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/leph102.pdf",
+    "book": "leph",
+    "chapter": 2
+  },
+  {
+    "file": "leph103.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/leph103.pdf",
+    "book": "leph",
+    "chapter": 3
+  },
+  {
+    "file": "leph104.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/leph104.pdf",
+    "book": "leph",
+    "chapter": 4
+  },
+  {
+    "file": "leph105.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/leph105.pdf",
+    "book": "leph",
+    "chapter": 5
+  },
+  {
+    "file": "leph106.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/leph106.pdf",
+    "book": "leph",
+    "chapter": 6
+  },
+  {
+    "file": "leph107.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/leph107.pdf",
+    "book": "leph",
+    "chapter": 7
+  },
+  {
+    "file": "leph108.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/leph108.pdf",
+    "book": "leph",
+    "chapter": 8
+  },
+  {
+    "file": "lech101.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lech101.pdf",
+    "book": "lech",
+    "chapter": 1
+  },
+  {
+    "file": "lech102.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lech102.pdf",
+    "book": "lech",
+    "chapter": 2
+  },
+  {
+    "file": "lech103.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lech103.pdf",
+    "book": "lech",
+    "chapter": 3
+  },
+  {
+    "file": "lech104.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lech104.pdf",
+    "book": "lech",
+    "chapter": 4
+  },
+  {
+    "file": "lech105.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lech105.pdf",
+    "book": "lech",
+    "chapter": 5
+  },
+  {
+    "file": "lebo101.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lebo101.pdf",
+    "book": "lebo",
+    "chapter": 1
+  },
+  {
+    "file": "lebo102.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lebo102.pdf",
+    "book": "lebo",
+    "chapter": 2
+  },
+  {
+    "file": "lebo103.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lebo103.pdf",
+    "book": "lebo",
+    "chapter": 3
+  },
+  {
+    "file": "lebo104.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lebo104.pdf",
+    "book": "lebo",
+    "chapter": 4
+  },
+  {
+    "file": "lebo105.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lebo105.pdf",
+    "book": "lebo",
+    "chapter": 5
+  },
+  {
+    "file": "lebo106.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lebo106.pdf",
+    "book": "lebo",
+    "chapter": 6
+  },
+  {
+    "file": "lebo107.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lebo107.pdf",
+    "book": "lebo",
+    "chapter": 7
+  },
+  {
+    "file": "lebo108.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lebo108.pdf",
+    "book": "lebo",
+    "chapter": 8
+  },
+  {
+    "file": "lebo109.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lebo109.pdf",
+    "book": "lebo",
+    "chapter": 9
+  },
+  {
+    "file": "lebo110.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lebo110.pdf",
+    "book": "lebo",
+    "chapter": 10
+  },
+  {
+    "file": "lebo111.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lebo111.pdf",
+    "book": "lebo",
+    "chapter": 11
+  },
+  {
+    "file": "lebo112.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lebo112.pdf",
+    "book": "lebo",
+    "chapter": 12
+  },
+  {
+    "file": "lebo113.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lebo113.pdf",
+    "book": "lebo",
+    "chapter": 13
+  },
+  {
+    "file": "lemh101.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lemh101.pdf",
+    "book": "lemh",
+    "chapter": 1
+  },
+  {
+    "file": "lemh102.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lemh102.pdf",
+    "book": "lemh",
+    "chapter": 2
+  },
+  {
+    "file": "lemh103.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lemh103.pdf",
+    "book": "lemh",
+    "chapter": 3
+  },
+  {
+    "file": "lemh104.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lemh104.pdf",
+    "book": "lemh",
+    "chapter": 4
+  },
+  {
+    "file": "lemh105.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lemh105.pdf",
+    "book": "lemh",
+    "chapter": 5
+  },
+  {
+    "file": "lemh106.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/lemh106.pdf",
+    "book": "lemh",
+    "chapter": 6
+  },
+  {
+    "file": "kemh101.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kemh101.pdf",
+    "book": "kemh",
+    "chapter": 1
+  },
+  {
+    "file": "kemh102.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kemh102.pdf",
+    "book": "kemh",
+    "chapter": 2
+  },
+  {
+    "file": "kemh103.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kemh103.pdf",
+    "book": "kemh",
+    "chapter": 3
+  },
+  {
+    "file": "kemh104.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kemh104.pdf",
+    "book": "kemh",
+    "chapter": 4
+  },
+  {
+    "file": "kemh105.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kemh105.pdf",
+    "book": "kemh",
+    "chapter": 5
+  },
+  {
+    "file": "kemh106.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kemh106.pdf",
+    "book": "kemh",
+    "chapter": 6
+  },
+  {
+    "file": "kemh107.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kemh107.pdf",
+    "book": "kemh",
+    "chapter": 7
+  },
+  {
+    "file": "kemh108.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kemh108.pdf",
+    "book": "kemh",
+    "chapter": 8
+  },
+  {
+    "file": "kemh109.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kemh109.pdf",
+    "book": "kemh",
+    "chapter": 9
+  },
+  {
+    "file": "kemh110.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kemh110.pdf",
+    "book": "kemh",
+    "chapter": 10
+  },
+  {
+    "file": "kemh111.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kemh111.pdf",
+    "book": "kemh",
+    "chapter": 11
+  },
+  {
+    "file": "kemh112.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kemh112.pdf",
+    "book": "kemh",
+    "chapter": 12
+  },
+  {
+    "file": "kemh113.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kemh113.pdf",
+    "book": "kemh",
+    "chapter": 13
+  },
+  {
+    "file": "kemh114.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kemh114.pdf",
+    "book": "kemh",
+    "chapter": 14
+  },
+  {
+    "file": "jemh101.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jemh101.pdf",
+    "book": "jemh",
+    "chapter": 1
+  },
+  {
+    "file": "jemh102.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jemh102.pdf",
+    "book": "jemh",
+    "chapter": 2
+  },
+  {
+    "file": "jemh103.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jemh103.pdf",
+    "book": "jemh",
+    "chapter": 3
+  },
+  {
+    "file": "jemh104.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jemh104.pdf",
+    "book": "jemh",
+    "chapter": 4
+  },
+  {
+    "file": "jemh105.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jemh105.pdf",
+    "book": "jemh",
+    "chapter": 5
+  },
+  {
+    "file": "jemh106.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jemh106.pdf",
+    "book": "jemh",
+    "chapter": 6
+  },
+  {
+    "file": "jemh107.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jemh107.pdf",
+    "book": "jemh",
+    "chapter": 7
+  },
+  {
+    "file": "jemh108.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jemh108.pdf",
+    "book": "jemh",
+    "chapter": 8
+  },
+  {
+    "file": "jemh109.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jemh109.pdf",
+    "book": "jemh",
+    "chapter": 9
+  },
+  {
+    "file": "jemh110.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jemh110.pdf",
+    "book": "jemh",
+    "chapter": 10
+  },
+  {
+    "file": "jemh111.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jemh111.pdf",
+    "book": "jemh",
+    "chapter": 11
+  },
+  {
+    "file": "jemh112.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jemh112.pdf",
+    "book": "jemh",
+    "chapter": 12
+  },
+  {
+    "file": "jemh113.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jemh113.pdf",
+    "book": "jemh",
+    "chapter": 13
+  },
+  {
+    "file": "jemh114.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/jemh114.pdf",
+    "book": "jemh",
+    "chapter": 14
+  },
+  {
+    "file": "hemh102.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hemh102.pdf",
+    "book": "hemh",
+    "chapter": 2
+  },
+  {
+    "file": "hemh103.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hemh103.pdf",
+    "book": "hemh",
+    "chapter": 3
+  },
+  {
+    "file": "hemh104.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hemh104.pdf",
+    "book": "hemh",
+    "chapter": 4
+  },
+  {
+    "file": "hemh106.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hemh106.pdf",
+    "book": "hemh",
+    "chapter": 6
+  },
+  {
+    "file": "hemh107.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hemh107.pdf",
+    "book": "hemh",
+    "chapter": 7
+  },
+  {
+    "file": "hemh108.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hemh108.pdf",
+    "book": "hemh",
+    "chapter": 8
+  },
+  {
+    "file": "hemh109.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hemh109.pdf",
+    "book": "hemh",
+    "chapter": 9
+  },
+  {
+    "file": "hemh110.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hemh110.pdf",
+    "book": "hemh",
+    "chapter": 10
+  },
+  {
+    "file": "hemh111.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hemh111.pdf",
+    "book": "hemh",
+    "chapter": 11
+  },
+  {
+    "file": "hemh112.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hemh112.pdf",
+    "book": "hemh",
+    "chapter": 12
+  },
+  {
+    "file": "hemh113.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/hemh113.pdf",
+    "book": "hemh",
+    "chapter": 13
+  }
+]
