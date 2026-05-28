@@ -1,5 +1,6 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { Link, useSearchParams } from 'react-router-dom';
+import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 
 interface PaginationProps {
   currentPage: number;
@@ -14,7 +15,7 @@ export function Pagination({
   basePath,
   preserveParams = [],
 }: PaginationProps) {
-  const [searchParams] = useSearchParams();
+  const searchParams = useSearchParams() ?? new URLSearchParams();
 
   function pageHref(page: number) {
     const params = new URLSearchParams();
@@ -38,7 +39,7 @@ export function Pagination({
     <nav className="flex flex-wrap items-center justify-center gap-2 mt-8" aria-label="Pagination">
       {currentPage > 1 ? (
         <Link
-          to={pageHref(currentPage - 1)}
+          href={pageHref(currentPage - 1)}
           rel="prev"
           className="flex items-center gap-1 px-3 py-2 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-sm"
         >
@@ -54,7 +55,7 @@ export function Pagination({
 
       {start > 1 && (
         <>
-          <Link to={pageHref(1)} className="px-3 py-2 rounded-lg border bg-white hover:bg-slate-50 text-sm">
+          <Link href={pageHref(1)} className="px-3 py-2 rounded-lg border bg-white hover:bg-slate-50 text-sm">
             1
           </Link>
           {start > 2 && <span className="text-slate-400">…</span>}
@@ -73,7 +74,7 @@ export function Pagination({
         ) : (
           <Link
             key={p}
-            to={pageHref(p)}
+            href={pageHref(p)}
             className="px-3 py-2 rounded-lg border bg-white hover:bg-slate-50 text-sm"
           >
             {p}
@@ -85,7 +86,7 @@ export function Pagination({
         <>
           {end < totalPages - 1 && <span className="text-slate-400">…</span>}
           <Link
-            to={pageHref(totalPages)}
+            href={pageHref(totalPages)}
             className="px-3 py-2 rounded-lg border bg-white hover:bg-slate-50 text-sm"
           >
             {totalPages}
@@ -95,7 +96,7 @@ export function Pagination({
 
       {currentPage < totalPages ? (
         <Link
-          to={pageHref(currentPage + 1)}
+          href={pageHref(currentPage + 1)}
           rel="next"
           className="flex items-center gap-1 px-3 py-2 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-sm"
         >

@@ -1,127 +1,120 @@
-import type { DocCategory, PDFDocument, Subject } from '../types/document';
-import { getDocumentPdfUrl } from './localPdfs';
+import type { Language, MaterialType, StudyMaterial, Subject } from '../types/document';
+import { getChapterTitle } from './ncertChapterTitles';
+import { getNcertPdfUrl } from './ncertAssets';
+import { getBook } from './ncertBooks';
+import { NCERT_MANIFEST } from './manifest';
 
-const SUBJECTS: Subject[] = ['physics', 'chemistry', 'biology', 'mathematics'];
-const CATEGORIES: DocCategory[] = [
-  'ncert-notes',
-  'lab-manual',
-  'question-paper',
-  'sample-paper',
-  'revision-sheet',
-];
-
-const CHAPTER_TITLES: Record<Subject, string[]> = {
-  physics: [
-    'Light – Reflection and Refraction',
-    'Human Eye and Colourful World',
-    'Electricity',
-    'Magnetic Effects of Electric Current',
-    'Sources of Energy',
-  ],
-  chemistry: [
-    'Chemical Reactions and Equations',
-    'Acids, Bases and Salts',
-    'Metals and Non-metals',
-    'Carbon and its Compounds',
-    'Periodic Classification of Elements',
-  ],
-  biology: [
-    'Life Processes',
-    'Control and Coordination',
-    'How do Organisms Reproduce?',
-    'Heredity and Evolution',
-    'Our Environment',
-  ],
-  mathematics: [
-    'Real Numbers',
-    'Polynomials',
-    'Pair of Linear Equations',
-    'Quadratic Equations',
-    'Arithmetic Progressions',
-    'Triangles',
-    'Coordinate Geometry',
-  ],
-};
-
-function pickUrl(docId: string): string {
-  return getDocumentPdfUrl(docId);
+function chapterLabel(lang: Language, num: number, title: string): string {
+  if (lang === 'hi') return `अध्याय ${num}: ${title}`;
+  return `Chapter ${num}: ${title}`;
 }
 
-function buildDocuments(): PDFDocument[] {
-  const docs: PDFDocument[] = [];
-  let seq = 0;
+function exerciseLabel(lang: Language, num: number): string {
+  if (lang === 'hi') {
+    return `अध्याय ${num}: अभ्यास एवं NCERT प्रश्न`;
+  }
+  return `Chapter ${num}: Exercises & NCERT Questions`;
+}
 
-  for (const classLevel of [6, 7, 8, 9, 10, 11, 12]) {
-    for (const subject of SUBJECTS) {
-      const chapters = CHAPTER_TITLES[subject];
-      for (let ch = 0; ch < chapters.length; ch++) {
-        for (const category of CATEGORIES) {
-          const id = `c${classLevel}-${subject}-${category}-ch${ch + 1}`;
-          const chapter = chapters[ch];
-          const year = 2018 + (classLevel % 5) + (ch % 3);
-          seq += 1;
-          docs.push({
-            id,
-            title: `Class ${classLevel} ${subject} – ${chapter} (${category})`,
-            description: `Study material for Class ${classLevel} ${subject}: ${chapter}. Category: ${category.replace(/-/g, ' ')}.`,
-            url: pickUrl(id),
-            size: `${(0.8 + (seq % 40) / 10).toFixed(1)} MB`,
-            classLevel,
-            subject,
-            category,
-            chapter,
-            year,
-            tags: [subject, `class-${classLevel}`, category, `ch-${ch + 1}`],
-          });
-        }
-      }
-    }
+function buildStudyCatalog(): StudyMaterial[] {
+  const materials: StudyMaterial[] = [];
+
+  for (const entry of NCERT_MANIFEST) {
+    const lang = (entry.lang ?? 'en') as Language;
+    const book = getBook(lang, entry.book);
+    const pdfUrl = getNcertPdfUrl(lang, entry.file);
+    if (!book || !pdfUrl) continue;
+
+    const chapterTitle = getChapterTitle(lang, entry.book, entry.chapter);
+    const baseId = `${lang}-${entry.book}-ch${String(entry.chapter).padStart(2, '0')}`;
+    const sourceUrl = entry.url;
+
+    const descChapter =
+      lang === 'hi'
+        ? `एनसीईआरटी ${book.title} — कक्षा ${book.classLevel}। पूर्ण अध्याय पढ़ें।`
+        : `NCERT ${book.title} — Class ${book.classLevel}. Read the full chapter with examples and diagrams.`;
+
+    const descExercise =
+      lang === 'hi'
+        ? `“${chapterTitle}” के अंतर्गत प्रश्न और अंतिम अभ्यास। पीडीएफ के अभ्यास खंड पर जाएँ।`
+        : `In-text and end-of-chapter exercises for “${chapterTitle}”. Scroll to the exercise section in the reader.`;
+
+    materials.push({
+      id: baseId,
+      title: chapterLabel(lang, entry.chapter, chapterTitle),
+      description: descChapter,
+      url: pdfUrl,
+      pdfFile: entry.file,
+      language: lang,
+      classLevel: book.classLevel,
+      subject: book.subject,
+      materialType: 'chapter',
+      chapterNumber: entry.chapter,
+      chapterTitle,
+      bookCode: book.code,
+      bookTitle: book.title,
+      sourceUrl,
+    });
+
+    materials.push({
+      id: `${baseId}-exercises`,
+      title: exerciseLabel(lang, entry.chapter),
+      description: descExercise,
+      url: pdfUrl,
+      pdfFile: entry.file,
+      language: lang,
+      classLevel: book.classLevel,
+      subject: book.subject,
+      materialType: 'exercises',
+      chapterNumber: entry.chapter,
+      chapterTitle,
+      bookCode: book.code,
+      bookTitle: book.title,
+      sourceUrl,
+    });
   }
 
-  // Legacy / misc entries (mixed URL styles for crawlers)
-  docs.push({
-    id: 'legacy-1',
-    title: 'Bidder Instructions (Legacy Upload)',
-    description: 'Original local bundle PDF',
-    url: getDocumentPdfUrl('legacy-1'),
-    size: '2.3 MB',
-    classLevel: 10,
-    subject: 'physics',
-    category: 'ncert-notes',
-    tags: ['legacy', 'local'],
+  return materials.sort((a, b) => {
+    if (a.language !== b.language) return a.language.localeCompare(b.language);
+    if (a.classLevel !== b.classLevel) return a.classLevel - b.classLevel;
+    if (a.subject !== b.subject) return a.subject.localeCompare(b.subject);
+    if (a.chapterNumber !== b.chapterNumber) return a.chapterNumber - b.chapterNumber;
+    return a.materialType === 'chapter' ? -1 : 1;
   });
-
-  return docs;
 }
 
-export const ALL_DOCUMENTS = buildDocuments();
-
+export const ALL_MATERIALS = buildStudyCatalog();
+export const ALL_DOCUMENTS = ALL_MATERIALS;
 export const DOCUMENTS_PER_PAGE = 12;
 
-export function getDocumentById(id: string): PDFDocument | undefined {
-  return ALL_DOCUMENTS.find((d) => d.id === id);
+export function getMaterialById(id: string): StudyMaterial | undefined {
+  return ALL_MATERIALS.find((m) => m.id === id);
 }
 
-export function filterDocuments(opts: {
+export const getDocumentById = getMaterialById;
+
+export function filterMaterials(opts: {
+  language?: Language;
   classLevel?: number;
   subject?: Subject;
-  category?: DocCategory;
+  materialType?: MaterialType;
   search?: string;
-  year?: number;
-}): PDFDocument[] {
+}): StudyMaterial[] {
   const q = opts.search?.trim().toLowerCase();
-  return ALL_DOCUMENTS.filter((doc) => {
-    if (opts.classLevel != null && doc.classLevel !== opts.classLevel) return false;
-    if (opts.subject && doc.subject !== opts.subject) return false;
-    if (opts.category && doc.category !== opts.category) return false;
-    if (opts.year != null && doc.year !== opts.year) return false;
+  return ALL_MATERIALS.filter((m) => {
+    if (opts.language && m.language !== opts.language) return false;
+    if (opts.classLevel != null && m.classLevel !== opts.classLevel) return false;
+    if (opts.subject && m.subject !== opts.subject) return false;
+    if (opts.materialType && m.materialType !== opts.materialType) return false;
     if (q) {
-      const hay = `${doc.title} ${doc.description} ${doc.chapter ?? ''} ${doc.tags.join(' ')}`.toLowerCase();
+      const hay = `${m.title} ${m.description} ${m.chapterTitle} ${m.bookTitle}`.toLowerCase();
       if (!hay.includes(q)) return false;
     }
     return true;
   });
 }
+
+export const filterDocuments = filterMaterials;
 
 export function paginate<T>(items: T[], page: number, perPage: number): { items: T[]; totalPages: number } {
   const totalPages = Math.max(1, Math.ceil(items.length / perPage));

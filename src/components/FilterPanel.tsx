@@ -1,11 +1,12 @@
-import type { DocCategory, Subject } from '../types/document';
-import { CATEGORY_LABELS, CLASS_LEVELS, SUBJECT_LABELS } from '../types/document';
+import { useLanguage } from '../context/LanguageContext';
+import type { MaterialType, Subject } from '../types/document';
+import { CLASS_LEVELS, MATERIAL_LABELS, SUBJECT_LABELS } from '../types/document';
+import { getSubjectsForClass } from '../data/ncertBooks';
 
 export interface FilterValues {
   classLevel: string;
   subject: string;
-  category: string;
-  year: string;
+  materialType: string;
   search: string;
   sort: string;
 }
@@ -23,6 +24,12 @@ export function FilterPanel({
   showAdvanced = false,
   onToggleAdvanced,
 }: FilterPanelProps) {
+  const { language } = useLanguage();
+  const classNum = values.classLevel ? Number(values.classLevel) : null;
+  const subjectOptions: Subject[] = classNum
+    ? getSubjectsForClass(classNum, language)
+    : (Object.keys(SUBJECT_LABELS[language]) as Subject[]);
+
   return (
     <form
       className="bg-white rounded-xl border border-slate-200 p-5 shadow-sm space-y-4"
@@ -35,7 +42,7 @@ export function FilterPanel({
             type="search"
             value={values.search}
             onChange={(e) => onChange('search', e.target.value)}
-            placeholder="Chapter, topic, tag…"
+            placeholder="Chapter name or topic…"
             className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
           />
         </label>
@@ -62,56 +69,40 @@ export function FilterPanel({
             className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
           >
             <option value="">All subjects</option>
-            {(Object.keys(SUBJECT_LABELS) as Subject[]).map((s) => (
+            {subjectOptions.map((s) => (
               <option key={s} value={s}>
-                {SUBJECT_LABELS[s]}
+                {SUBJECT_LABELS[language][s]}
               </option>
             ))}
           </select>
         </label>
         <label className="block">
-          <span className="text-sm font-medium text-slate-700">Sort</span>
+          <span className="text-sm font-medium text-slate-700">Sort by</span>
           <select
             value={values.sort}
             onChange={(e) => onChange('sort', e.target.value)}
             className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
           >
+            <option value="chapter">Chapter order</option>
             <option value="title">Title A–Z</option>
-            <option value="class-desc">Class (high first)</option>
-            <option value="class-asc">Class (low first)</option>
-            <option value="year-desc">Year (newest)</option>
+            <option value="class-desc">Class (higher first)</option>
           </select>
         </label>
       </div>
 
       {showAdvanced && (
-        <div className="grid gap-4 sm:grid-cols-2 pt-2 border-t border-slate-100">
-          <label className="block">
-            <span className="text-sm font-medium text-slate-700">Category</span>
+        <div className="pt-2 border-t border-slate-100">
+          <label className="block max-w-xs">
+            <span className="text-sm font-medium text-slate-700">Material type</span>
             <select
-              value={values.category}
-              onChange={(e) => onChange('category', e.target.value)}
+              value={values.materialType}
+              onChange={(e) => onChange('materialType', e.target.value)}
               className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
             >
-              <option value="">All categories</option>
-              {(Object.keys(CATEGORY_LABELS) as DocCategory[]).map((c) => (
-                <option key={c} value={c}>
-                  {CATEGORY_LABELS[c]}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label className="block">
-            <span className="text-sm font-medium text-slate-700">Year</span>
-            <select
-              value={values.year}
-              onChange={(e) => onChange('year', e.target.value)}
-              className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-            >
-              <option value="">Any year</option>
-              {[2024, 2023, 2022, 2021, 2020, 2019, 2018].map((y) => (
-                <option key={y} value={y}>
-                  {y}
+              <option value="">Chapters & exercises</option>
+              {(Object.keys(MATERIAL_LABELS) as MaterialType[]).map((t) => (
+                <option key={t} value={t}>
+                  {MATERIAL_LABELS[language][t]}
                 </option>
               ))}
             </select>
@@ -125,7 +116,7 @@ export function FilterPanel({
           onClick={onToggleAdvanced}
           className="text-sm text-indigo-600 hover:underline font-medium"
         >
-          {showAdvanced ? 'Hide more options' : 'Show more options'}
+          {showAdvanced ? 'Hide filters' : 'More filters'}
         </button>
       )}
     </form>
