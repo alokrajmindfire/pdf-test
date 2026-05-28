@@ -11,7 +11,9 @@
     "build:catalog": "tsx scripts/export-catalog-ids.ts",
     "fetch-pdfs": "node scripts/download-ncert-pdfs.mjs",
     "link-pdfs": "node scripts/link-unique-pdfs.mjs",
-    "setup-pdfs": "npm run build:catalog && npm run fetch-pdfs && npm run link-pdfs"
+    "setup-pdfs": "npm run build:catalog && npm run fetch-pdfs && npm run link-pdfs",
+    "clean-pdfs": "node scripts/clean-pdfs.mjs",
+    "seed-pdfs:100": "node scripts/seed-100-pdfs.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.1",
