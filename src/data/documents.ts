@@ -10,6 +10,8 @@ const CATEGORIES: DocCategory[] = [
   'revision-sheet',
 ];
 
+const MAX_DOCUMENTS = 100;
+
 const CHAPTER_TITLES: Record<Subject, string[]> = {
   physics: [
     'Light – Reflection and Refraction',
@@ -56,6 +58,7 @@ function buildDocuments(): PDFDocument[] {
       const chapters = CHAPTER_TITLES[subject];
       for (let ch = 0; ch < chapters.length; ch++) {
         for (const category of CATEGORIES) {
+          if (docs.length >= MAX_DOCUMENTS) return docs;
           const id = `c${classLevel}-${subject}-${category}-ch${ch + 1}`;
           const chapter = chapters[ch];
           const year = 2018 + (classLevel % 5) + (ch % 3);
@@ -79,6 +82,7 @@ function buildDocuments(): PDFDocument[] {
   }
 
   // Legacy / misc entries (mixed URL styles for crawlers)
+  if (docs.length >= MAX_DOCUMENTS) return docs;
   docs.push({
     id: 'legacy-1',
     title: 'Bidder Instructions (Legacy Upload)',

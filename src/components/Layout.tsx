@@ -75,8 +75,8 @@ export function Layout() {
               </Link>
             </li>
             <li>
-              <a href="/documents/placeholder-science-notes.pdf" className="text-indigo-600 hover:underline">
-                Direct PDF (public path)
+              <a href="/documents/test.pdf" className="text-indigo-600 hover:underline">
+                Direct PDF (test file)
               </a>
             </li>
             <li>
