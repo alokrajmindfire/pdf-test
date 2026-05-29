@@ -10,7 +10,7 @@ const CATEGORIES: DocCategory[] = [
   'revision-sheet',
 ];
 
-const MAX_DOCUMENTS = 100;
+const MAX_DOCUMENTS = 115;
 
 const CHAPTER_TITLES: Record<Subject, string[]> = {
   physics: [
@@ -56,7 +56,8 @@ function buildDocuments(): PDFDocument[] {
   for (const classLevel of [6, 7, 8, 9, 10, 11, 12]) {
     for (const subject of SUBJECTS) {
       const chapters = CHAPTER_TITLES[subject];
-      for (let ch = 0; ch < chapters.length; ch++) {
+      const chapterCount = classLevel === 6 && subject === 'mathematics' ? 4 : chapters.length;
+      for (let ch = 0; ch < chapterCount; ch++) {
         for (const category of CATEGORIES) {
           if (docs.length >= MAX_DOCUMENTS) return docs;
           const id = `c${classLevel}-${subject}-${category}-ch${ch + 1}`;
