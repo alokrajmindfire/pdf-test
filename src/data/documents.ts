@@ -10,7 +10,7 @@ const CATEGORIES: DocCategory[] = [
   'revision-sheet',
 ];
 
-const MAX_DOCUMENTS = 121;
+const MAX_DOCUMENTS = 111;
 
 const CHAPTER_TITLES: Record<Subject, string[]> = {
   physics: [
@@ -100,7 +100,11 @@ function buildDocuments(): PDFDocument[] {
           if (
             classLevel === 6 && subject === 'mathematics' && ch === 4 && category === 'ncert-notes' ||
             classLevel === 6 && subject === 'biology' && ch === 4 && category === 'question-paper' ||
-            classLevel === 6 && subject === 'chemistry' && ch === 4 && category === 'sample-paper'
+            classLevel === 6 && subject === 'chemistry' && ch === 4 && category === 'sample-paper' ||
+            classLevel === 6 && subject === 'physics' && ch === 4 && category === 'lab-manual' ||
+            classLevel === 6 && subject === 'chemistry' && ch === 4 && category === 'ncert-notes' ||
+            classLevel === 6 && subject === 'mathematics' && category === 'revision-sheet' ||
+            classLevel === 6 && subject === 'physics' && category === 'revision-sheet'
           ) {
             continue;
           }
